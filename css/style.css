@@ -76,11 +76,6 @@ body{
   margin-right: 24px;
 }
 
-.span-ru span{
-  margin-right: 20px;
-}
-
-
 .ru-lang{
   display: flex;
   align-items: center;
@@ -104,8 +99,13 @@ body{
   border-radius: 5px;
 }
 
+.language-ru span{
+  margin-left: 5px;
+
+}
 
 .language-ru{
+  /* padding-right: 11px; */
   font-family: 'Roboto',sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -116,13 +116,20 @@ body{
   border-radius: 5px;
   padding: 7px 8px 7px 0;
   color: #535353;
+  display: flex;
+  padding-left: 11px;
+
 }
 
-.language-ru img{
+.language-ru::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  margin-left: 5px;
-  margin-right: 10px;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/language.svg");
 }
 
 .telegram-img{
@@ -140,7 +147,6 @@ body{
   color: #352f2f;
   border-radius: 5px;
   border: none;
-
 }
 
 .telegram-img a{
@@ -149,9 +155,17 @@ body{
   color: #fff;
 }
 
-.telegram-img img{
- margin-left: 10px;
+.telegram-img::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/fist-telegram-icon.svg");
+  margin-left: 10px;
 }
+
 
 .site-navigation{
   margin: 0;
@@ -189,4 +203,324 @@ body{
 
 .nrg-icon{
   padding-bottom: 43px;
+}
+
+.site-main-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-main-up-img p{
+  margin: 11px 0;
+}
+
+.site-main-down-img p{
+  margin: 11px 0;
+}
+
+.prizdent-icon p {
+  width: 380px;
+  /* margin: 11px 0; */
+}
+
+.karantin-icon p {
+  width: 370px;
+  /* margin: 11px 0; */
+}
+
+.site-main-down {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.prokror-icon {
+  width: 386px;
+}
+
+.tez-yordam-icon p {
+  width: 333px;
+  /* margin: 11px 0; */
+}
+
+.site-main-down-img{
+  margin-top: 20px;
+}
+
+.notlify{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 28px 34px;
+  background-color: rgba(239, 186, 84, 0.18);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-top: 35px;
+  width: 1200px;
+  
+}
+.notlify-head{
+  display: flex;
+  align-items: center;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  color: #000000;
+}
+
+.notlify-head::before{
+  margin-right: 19px;
+  /* display: flex; */
+  content: '';
+  display: block;
+  width: 30px;
+  height: 35px;
+  background-image: url("../img/bell-icon.svg");
+}
+
+.notlify-btn{
+  margin-left: 20px;
+  padding: 8px 8px 8px 15px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  background-color:  #FE5C28;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+.site-main-section{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-heading{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 86px 0 20px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+.news-left{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-item-dala a{
+  text-decoration: none;
+}
+
+.news-left-icon h3{
+  width: 434px;
+  height: 42px;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.news-left-icon p{
+  width: 512px;
+  height: 55px;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.news-left-icon time{
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688A4;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.news-left-icon time::before{
+  content: '';
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../img/date.svg');    
+}
+
+.news-item-dala{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.news-item-yigilish{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.news-item-yigilish a{
+text-decoration: none;
+}
+
+.news-item-bus{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.news-item-bus a{
+text-decoration: none;
+}
+
+.news-right-heading{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202020;    
+  margin-top: 16px;
+}
+
+.news-right{
+  width: 386px;
+  height: 505px;
+  background-color: rgba(246, 246, 249, 1);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.news-right-item{
+  list-style: none;
+}
+
+.news-right-item p{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: #202020;
+  width: 280px;
+  height: 62px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.news-right-item time{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688A4;
+}
+
+.news-right-item time::after{
+  content: '';
+  display: block;
+  width: 305px;
+  height: 4px;
+  background-color: rgba(228, 228, 228, 1);
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.news-right-item2{
+  list-style: none;
+}
+
+.news-right-item2 p{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: #202020;
+  width: 280px;
+  height: 62px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.news-right-item2 time{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688A4;
+  margin-bottom: 18px;
+}
+
+.ucell-icon{
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+.katta-btn{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  border: 2px solid black;
+  color: #FFFFFF;
+  background-color: rgba(41, 80, 147, 1);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  width: 211px;
+  height: 42px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+
+.katta-btn p{
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+  /* color: #FFF; */
 }
