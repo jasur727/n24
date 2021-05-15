@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('Rubik-Light.woff2') format('woff2'),
+      url('Rubik-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('Rubik-LightItalic.woff2') format('woff2'),
+      url('Rubik-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -409,11 +427,11 @@ text-decoration: none;
   line-height: 24px;
   color: #202020;    
   margin-top: 16px;
+  /* margin-bottom: 20px; */
 }
 
 .news-right{
   width: 386px;
-  height: 505px;
   background-color: rgba(246, 246, 249, 1);
   border: 2px solid transparent;
   border-radius: 8px;
@@ -456,10 +474,12 @@ text-decoration: none;
   background-color: rgba(228, 228, 228, 1);
   margin-top: 15px;
   padding: 0 20px;
+  margin-bottom: 19px;
 }
 
 .news-right-item2{
   list-style: none;
+  margin-bottom: 19px;
 }
 
 .news-right-item2 p{
@@ -484,7 +504,7 @@ text-decoration: none;
   font-size: 14px;
   line-height: 17px;
   color: #7688A4;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
 }
 
 .ucell-icon{
